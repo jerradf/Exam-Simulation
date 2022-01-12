@@ -1,20 +1,11 @@
 (Before you start the test):
-  facial recognition
-    -> this allows us to setup our boundaries for the face.
-
+  instructions are prompted, along with test prompt.
+  
+  
 TEST WILL START!
 (while the test is running):
-  check every second for:
+  check every frame for:
     *mouse movements (if it is out of the required window boundary)
-    *speech recognition (NO TALKING DURING TEST!)
-    *facial recognition (MUST BE ABLE TO RECOGNIZE FACE AT ALL  TIMES)
-      -> if ANY RULES are violated:
-          send a message to Admin Email
-
-
-
-
-
 
   
   Mouse Formula ✅
