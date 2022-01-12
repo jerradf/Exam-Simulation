@@ -1,0 +1,40 @@
+(Before you start the test):
+  facial recognition
+    -> this allows us to setup our boundaries for the face.
+
+TEST WILL START!
+(while the test is running):
+  check every second for:
+    *mouse movements (if it is out of the required window boundary)
+    *speech recognition (NO TALKING DURING TEST!)
+    *facial recognition (MUST BE ABLE TO RECOGNIZE FACE AT ALL  TIMES)
+      -> if ANY RULES are violated:
+          send a message to Admin Email
+
+
+
+
+
+
+  
+  Mouse Formula ✅
+    # Detected if combined (2 or more): ✅
+       -> the boundaries. (warning 3 and warning 4)
+       -> rapid movements (warning 1 and warning 2)
+
+
+       Warning 2 and Warning 3
+       Warning 1 and Warning 3
+       Warning 1 and Warning 4
+       Warning 2 and Warning 4
+
+       Warning 2 and Warning 3 and Warning 4
+       Warning 1 and Warning 2 and Warning 3
+       Warning 1 and Warning 3 and Warning 4
+       Warning 1 and Warning 2 and Warning 4
+
+    # 2 Rapid Movements at the same time. ✅
+      -> Warning 1 and Warning 2 
+
+    # 2 Boundary Movements at the same time. ✅
+      -> Warning 3 and Warning 4
