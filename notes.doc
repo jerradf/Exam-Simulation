@@ -1,31 +1,61 @@
 (Before you start the test):
-  instructions are prompted, along with test prompt.
-  
-  
+  facial recognition
+    -> this allows us to setup our boundaries for the face.
+
+--------------------------------------------------------------------------------
+{Psuedocode}:
+
 TEST WILL START!
 (while the test is running):
-  check every frame for:
+  check every second for:
     *mouse movements (if it is out of the required window boundary)
+    *speech recognition (NO TALKING DURING TEST!)
+      -> if ANY RULES are violated:
+          cheating detected
+          email sent to teacher (Indicating Failure)
+-> when test is properly ended
+    email sent to teacher (Indicating Success)
 
-  
-  Mouse Formula ✅
-    # Detected if combined (2 or more): ✅
-       -> the boundaries. (warning 3 and warning 4)
-       -> rapid movements (warning 1 and warning 2)
+--------------------------------------------------------------------------------
+There are some external factors that cheating can be detected. This is where the program is unable to detect the cheating, but the factors that were created in the program allows the teachers to detect cheating. (See below)
+
+(EXTERNALLY): What are some other ways cheating can be detected?
+* The file is written and sent to the teacher, so if the file is never sent, cheating can be externally detected (the user did not click the submit button).
+* The submission file is timestamped, so the teacher that gets the exam back can be able to track the timestamp that the file is created upon. If this exam is not timestamped at the time that the exam occurs, cheating can be externally detected (the user did not click the submit button).
 
 
-       Warning 2 and Warning 3
-       Warning 1 and Warning 3
-       Warning 1 and Warning 4
-       Warning 2 and Warning 4
+In short, if the user did not submit, there is cheating involved. And there is file documentation that is written to be sent to the instructor (the detection tools that we created). This may not be much help until the warning is detected at the bottom of the document.
+--------------------------------------------------------------------------------
+***********************************************
+Mouse Detection Formula
+  # Detected if combined (2 or more):
+      -> the boundaries. (if mouse is detected to leave window, as well as warning 3 and warning 4)
+      -> rapid movements (warning 1 and warning 2)
 
-       Warning 2 and Warning 3 and Warning 4
-       Warning 1 and Warning 2 and Warning 3
-       Warning 1 and Warning 3 and Warning 4
-       Warning 1 and Warning 2 and Warning 4
 
-    # 2 Rapid Movements at the same time. ✅
-      -> Warning 1 and Warning 2 
+      Warning 2 and Warning 3
+      Warning 1 and Warning 3
+      Warning 1 and Warning 4
+      Warning 2 and Warning 4
 
-    # 2 Boundary Movements at the same time. ✅
-      -> Warning 3 and Warning 4
+      Warning 2 and Warning 3 and Warning 4
+      Warning 1 and Warning 2 and Warning 3
+      Warning 1 and Warning 3 and Warning 4
+      Warning 1 and Warning 2 and Warning 4
+
+  # 2 Rapid Movements at the same time.
+    -> Warning 1 and Warning 2 
+
+  # 2 Boundary Movements at the same time.
+    -> Warning 3 and Warning 4
+
+***********************************************
+Sound Detection Formula
+  # Every 100 ms, we are going to check the current sound waves
+  # Detected if sound wave currently checking is greater than a specified amplitude level.
+
+
+
+
+
+
